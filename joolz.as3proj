@@ -54,6 +54,7 @@
   <libraryPaths>
     <element path="lib\SwiftSuspenders-v1.6.0.swc" />
     <element path="lib\robotlegs-framework-v1.5.2.swc" />
+    <element path="lib\MonsterDebugger.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

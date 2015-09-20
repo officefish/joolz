@@ -1,5 +1,6 @@
 package joolz.mvc.bootstrap 
 {
+	import joolz.mvc.model.StateModel;
 	import org.robotlegs.core.IInjector;
 	/**
 	 * ...
@@ -10,7 +11,7 @@ package joolz.mvc.bootstrap
 		
 		public function BootstrapModel(injector:IInjector)  
 		{
-			
+			injector.mapSingleton(StateModel); 
 		}
 		
 	}

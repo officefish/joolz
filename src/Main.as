@@ -1,5 +1,6 @@
 package 
 {
+	import com.demonsters.debugger.MonsterDebugger;
 	import flash.display.Sprite;
 	import flash.display.StageQuality;
 	import flash.events.Event;
@@ -32,6 +33,8 @@ package
 			// entry point
 			stage.scaleMode = StageScaleMode.NO_SCALE;
             stage.align = StageAlign.TOP_LEFT;
+			
+			MonsterDebugger.initialize(this);
 			
 			_starling = new Starling(Joolz, stage);
 			_starling.antiAliasing = 2; 

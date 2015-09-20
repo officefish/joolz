@@ -16,7 +16,7 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'18.09.2015'</value>
+      <value>'20.09.2015'</value>
     </define>
     <define append="true">
       <name>CONFIG::air</name>
@@ -38,6 +38,7 @@
     <library-path append="true">
       <path-element>D:\practice\joolz\lib\SwiftSuspenders-v1.6.0.swc</path-element>
       <path-element>D:\practice\joolz\lib\robotlegs-framework-v1.5.2.swc</path-element>
+      <path-element>D:\practice\joolz\lib\MonsterDebugger.swc</path-element>
     </library-path>
   </compiler>
   <file-specs>
