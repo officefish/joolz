@@ -12,6 +12,7 @@
     <movie minorVersion="0" />
     <movie platform="Flash Player" />
     <movie background="#FFFFFF" />
+    <movie preferredSDK="Flex 4.6.0, AIR 15.0;4.6.0, 15.0;" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
@@ -55,6 +56,8 @@
     <element path="lib\SwiftSuspenders-v1.6.0.swc" />
     <element path="lib\robotlegs-framework-v1.5.2.swc" />
     <element path="lib\MonsterDebugger.swc" />
+    <element path="lib\feathers.swc" />
+    <element path="lib\Flox-AS3.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

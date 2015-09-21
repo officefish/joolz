@@ -2,6 +2,8 @@ package joolz.mvc.controller.state
 {
 	import com.demonsters.debugger.MonsterDebugger;
 	import joolz.mvc.model.StateModel;
+	import joolz.mvc.view.Intro;
+	import joolz.mvc.view.MainView;
 	import joolz.state.State;
 	import org.robotlegs.mvcs.StarlingCommand;
 	
@@ -13,6 +15,12 @@ package joolz.mvc.controller.state
 	{
 		[Inject]
 		public var model:StateModel;
+		
+		[Inject]
+		public var intro:Intro;
+		
+		[Inject]
+		public var main:MainView;
 		
 		override public function execute():void 
 		{
@@ -31,11 +39,15 @@ package joolz.mvc.controller.state
 		}
 		
 		private function gotoIntroView () :void {
-			MonsterDebugger.log ('Show Intro View');
+			contextView.removeChildren();
+			intro.resize(contextView.stage.stageWidth, contextView.stage.stageHeight);
+			contextView.addChild(intro);
 		}
 		
 		private function gotoMainView () :void {
-			MonsterDebugger.log ('Show Main View');
+			contextView.removeChildren();
+			main.resize(contextView.stage.stageWidth, contextView.stage.stageHeight);
+			contextView.addChild(main);
 		}
 	}
 

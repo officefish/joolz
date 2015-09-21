@@ -1,5 +1,6 @@
 package joolz.mvc.bootstrap 
 {
+	import joolz.mvc.service.FloxService;
 	import org.robotlegs.core.IInjector;
 	/**
 	 * ...
@@ -10,7 +11,7 @@ package joolz.mvc.bootstrap
 		
 		public function BootstrapService(injector:IInjector)  
 		{
-			
+			injector.mapSingleton(FloxService); 
 		}
 		
 	}

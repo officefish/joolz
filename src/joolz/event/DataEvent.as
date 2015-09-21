@@ -11,6 +11,8 @@ package joolz.event
 		
 		private var _data:Object;
 		
+		public static const CACHE:String = 'cacheData';
+		
 		public function DataEvent(type:String, data:Object = null, bubbles:Boolean=false, cancelable:Boolean=false) 
 		{
 			this._data = data;

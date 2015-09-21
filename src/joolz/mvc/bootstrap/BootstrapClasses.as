@@ -1,5 +1,7 @@
 package joolz.mvc.bootstrap 
 {
+	import joolz.mvc.view.Intro;
+	import joolz.mvc.view.MainView;
 	import org.robotlegs.core.IInjector;
 	/**
 	 * ...
@@ -10,7 +12,8 @@ package joolz.mvc.bootstrap
 		
 		public function BootstrapClasses(injector:IInjector)  
 		{
-			
+			injector.mapSingleton(Intro);
+			injector.mapSingleton(MainView);
 		}
 	}
 

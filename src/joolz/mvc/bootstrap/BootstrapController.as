@@ -1,6 +1,8 @@
 package joolz.mvc.bootstrap 
 {
+	import joolz.event.DataEvent;
 	import joolz.event.JoolzContextEvent;
+	import joolz.mvc.controller.cache.CacheCommand;
 	import joolz.mvc.controller.init.InitCompleteCommand;
 	import joolz.mvc.controller.init.InitModelCommand;
 	import joolz.mvc.controller.init.InitServiceCommand;
@@ -32,6 +34,9 @@ package joolz.mvc.bootstrap
 			
 			//-- Application State Machine -- 
 			commandMap.mapEvent(JoolzContextEvent.VALIDATE, ValidateCommand);
+			
+			//-- Cache Data --
+			commandMap.mapEvent(DataEvent.CACHE, CacheCommand, DataEvent);
 			
 			
 		}
